@@ -3,36 +3,19 @@
 {% block title %} {{ super() }} - Home{% endblock %}
 
 {% block content %}
-    <div class="card-deck" style="padding-top: 2em;">
-
-        <div class="card" style="text-align: center">
-            <i class="card-img-top fas fa-code icon-card" style="font-size: 250px"></i>
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-
-        <div class="card" style="text-align: center">
-            <img src="{{ url_for('static',filename='images/cqi.jpg') }}" class="card-img-top rounded-circle" alt="profile pic" style="margin:auto; max-width: 50%; height: auto;">
-            <div class="card-body">
-                <h5 class="card-title">Kristopher Beauchemin</h5>
-                <p class="card-text">Software Engineering Student at Concordia University</p>
-            </div>
-        </div>
-
-        <div class="card" style="text-align: center">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-
+    <body class="text-center" style="background-color: #f0ece2;"></body>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <main role="main" class="inner cover">
+        <h1 class="cover-heading">Summary</h1>
+        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit
+            the text, and add your own fullscreen background photo to make it your own.</p>
+        <p class="lead">
+            <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+        </p>
+    </main>
     </div>
-{% endblock %} <!-- content -->
+
+
+    </body>
+{% endblock %}
 

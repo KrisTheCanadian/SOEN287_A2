@@ -18,14 +18,15 @@
                 integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
                 crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/4d68be6bd8.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
 
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+        <link href="{{ url_for('static',filename='styles/style.css') }}" type="text/css" rel="stylesheet">
     {% endblock %}
 </head>
 <body>
 {% block nav %}
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark static-top">
+    <nav class="navbar navbar-dark navbar-expand-lg static-top" style="background-color: #010101">
         <a class="navbar-brand" href="#"><h3>Kristopher Beauchemin</h3></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,5 +60,41 @@
 <br>
 {% block content %}
 {% endblock %} <!-- content -->
+
+{% block footer %}
+    <footer class="page-footer font-small fixed-bottom" style="background-color: #010101">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!-- Grid row-->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-12 py-5">
+                    <div class="mb-5 flex-center" style="color:white;">
+                        <a href="https://github.com/KrisTheCanadian" class="git-ic">
+                            <i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <a href="https://devpost.com/KrisTheCanadian" class="dev-ic">
+                            <i class="fab fa-dev fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kristopher-beauchemin/" class="li-ic">
+                            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <a href="https://www.instagram.com/kristhecanadian/" class="ins-ic">
+                            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
+        </div>
+        <!-- Footer Elements -->
+    </footer>
+{% endblock %}
 </body>
 </html>
