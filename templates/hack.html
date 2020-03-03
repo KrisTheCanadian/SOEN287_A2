@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %} {{ super() }} - Hackathons and Experience{% endblock %}
+
+{% block content %}
+    <body class="text-center" style="background-color: #f0ece2;">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <main role="main" class="inner cover">
+            <h1 class="cover-heading">Projects and Hackathons</h1>
+            <p class="lead p-3">Here is will be displaying information about my projects and hackathons that i've
+                done!</p>
+            <div class="card-columns">
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="{{ url_for('static',filename='images/conuhacks_team.jpg') }}"
+                         alt="Conu" style="">
+                    <div class="card-body">
+                        <h4 class="card-title">ConuHacks</h4>
+                        <p class="card-text">Coxswain grog blossom jolly boat come about killick scallywag quarterdeck
+                            furl matey chase.</p>
+                        <a href="https://devpost.com/software/bit-wizards-7u1sl4" class="btn btn-primary">See Devpost
+                            Project</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="{{ url_for('static',filename='images/conuhacks_team.jpg') }}"
+                         alt="hackatown" style="">
+                    <div class="card-body">
+                        <h4 class="card-title">Hackatown 2020</h4>
+                        <p class="card-text">Gibbet dance the hempen jig yo-ho-ho bilge hempen halter bounty belaying
+                            pin scallywag quarterdeck crow's nest log spirits.</p>
+                        <a href="https://devpost.com/software/stmpathfinder" class="btn btn-primary">See Devpost
+                            Project</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="{{ url_for('static',filename='images/conuhacks_team.jpg') }}"
+                         alt="CQI" style="">
+                    <div class="card-body">
+                        <h4 class="card-title">CQI 2020</h4>
+                        <p class="card-text">Yawl parley square-rigged furl fire in the hole hornswaggle case shot dance
+                            the hempen jig nipper deadlights keelhaul come about driver transom bowsprit.</p>
+                        <a href="#" class="btn btn-primary">See Sourcecode</a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="lead py-3">
+                Hail-shot tackle black jack crimp bilge warp plunder weigh anchor Barbary Coast dance the hempen jig
+                execution dock Privateer. Black spot loot hardtack chandler capstan draft keel squiffy rum barkadeer
+                landlubber or just lubber fire in the hole. Splice the main brace Blimey Pieces of Eight yardarm parrel
+                Sea Legs piracy coffer pillage ahoy careen Cat o'nine tails.
+            </p>
+            <p class="lead py-3">
+                Hail-shot tackle black jack crimp bilge warp plunder weigh anchor Barbary Coast dance the hempen jig
+                execution dock Privateer. Black spot loot hardtack chandler capstan draft keel squiffy rum barkadeer
+                landlubber or just lubber fire in the hole. Splice the main brace Blimey Pieces of Eight yardarm parrel
+                Sea Legs piracy coffer pillage ahoy careen Cat o'nine tails.
+            </p>
+        </main>
+    </div>
+
+
+    </body>
+{% endblock %}
+

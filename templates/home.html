@@ -3,14 +3,14 @@
 {% block title %} {{ super() }} - Home{% endblock %}
 
 {% block content %}
-    <body class="text-center" style="background-color: #f0ece2;"></body>
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <body class="text-center" style="background-color: #f0ece2;">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column img-fluid rounded">
     <main role="main" class="inner cover">
-        <h1 class="cover-heading">Summary</h1>
-        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit
-            the text, and add your own fullscreen background photo to make it your own.</p>
-        <p class="lead">
-            <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+        <h1 class="cover-heading">Home Page</h1>
+        <p class="lead p-3">Hi my name is Kris! This will be my Home page</p>
+        <img src="{{ url_for('static',filename='images/cqi.jpg') }}" class="img-fluid rounded" alt="profile" style="width: 25%; height: auto;">
+        <p class="lead py-5 px-15">
+            Lad Pieces of Eight sheet interloper carouser lugger sutler spanker flogging gally line mizzen. Spyglass jolly boat Cat o'nine tails fluke dead men tell no tales keel crow's nest mizzen bring a spring upon her cable clap of thunder landlubber or just lubber grog. Barkadeer overhaul sloop keel ahoy bring a spring upon her cable measured fer yer chains nipperkin boom ye belay run a shot across the bow. Jack Ketch bilge water killick run a rig jack Shiver me timbers log topsail bilged on her anchor rigging landlubber or just lubber me. Reef mizzen Sink me jury mast log hail-shot knave yo-ho-ho sloop loot chandler splice the main brace.
         </p>
     </main>
     </div>

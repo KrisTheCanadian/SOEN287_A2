@@ -27,31 +27,30 @@
 <body>
 {% block nav %}
     <nav class="navbar navbar-dark navbar-expand-lg static-top" style="background-color: #010101">
-        <a class="navbar-brand" href="#"><h3>Kristopher Beauchemin</h3></a>
+        <a class="navbar-brand" href="{{ url_for('home') }}"><h3>Kristopher Beauchemin</h3></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="nav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-
-                    <a class="nav-link" href="#"><i class="fas fa-home" style=""></i> Home</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('home') }}"><i class="fas fa-home" style=""></i> Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-code"></i> Hackathons and Projects</a>
+                    <a class="nav-link" href="{{ url_for('hack') }}"><i class="fas fa-code"></i> Hackathons and Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-briefcase"></i> Work Experience</a>
+                    <a class="nav-link" href="{{ url_for('exp') }}"><i class="fas fa-briefcase"></i> Work Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-coffee"></i> Freelancing</a>
+                    <a class="nav-link" href="{{ url_for('free') }}"><i class="fas fa-coffee"></i> Freelancing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-graduation-cap"></i> Education</a>
+                    <a class="nav-link" href="{{ url_for('edu') }}"><i class="fas fa-graduation-cap"></i> Education</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-users"></i> Testimonials</a>
+                    <a class="nav-link" href="{{ url_for('testi') }}"><i class="fas fa-users"></i> Testimonials</a>
                 </li>
             </ul>
         </div>
@@ -62,7 +61,7 @@
 {% endblock %} <!-- content -->
 
 {% block footer %}
-    <footer class="page-footer font-small fixed-bottom" style="background-color: #010101">
+    <footer class="page-footer font-small ml-auto" style="background-color: #010101;">
 
         <!-- Footer Elements -->
         <div class="container">

@@ -29,6 +29,7 @@ a:visited {
 /* mouse over link */
 a:hover {
     color: #acdbdf;
+    text-decoration: none;
 }
 
 /* selected link */
@@ -37,16 +38,20 @@ a:active {
 }
 
 
-.footer {
+footer {
     font-size: 25vw;
     background: #69779b;
-    position: relative;
     margin-top: -150px; /* negative value of footer height */
-    height: 150px;
     clear: both;
     padding-top: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 180px;
 }
 
 li.nav-item :hover {
     color: #acdbdf !important;
+    text-decoration: none;
 }
